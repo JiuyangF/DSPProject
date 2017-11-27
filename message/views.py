@@ -10,4 +10,5 @@ def getform(request):
 
 def getHellworld():
      infmation = ''
+     dk = "为啥不行啊"
      pass
