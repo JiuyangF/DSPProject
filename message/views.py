@@ -9,4 +9,5 @@ def getform(request):
      return render(request, 'temp.html', context)
 
 def getHellworld():
+     infmation = ''
      pass
