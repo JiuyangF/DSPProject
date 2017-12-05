@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'^index',getform),
     url(r'^admin/', admin.site.urls),
     url(r'^form/$',getform,name='go_form')
-
 ]

@@ -1,0 +1,2 @@
+adminusername : admin
+password: root123456

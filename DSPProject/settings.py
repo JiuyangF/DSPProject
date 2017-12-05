@@ -9,13 +9,14 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
-
+# import MySQLdb
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+#项目跟目录
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 #仅有上面的设置，只说明了样式放在static文件，需要指定和项目根目录的关系
 
 #设置静态文件的目录，设置为列表形式
@@ -30,13 +31,15 @@ STATICFILES_DIRS = [
 SECRET_KEY = '1^=fn5ur^&gj=9l(e26@@^anyi-#miw&@eu4^ab))*zet@%dcl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#抛出异常到页面，正式项目需关闭
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
 
+#Django 应用 apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,7 +50,7 @@ INSTALLED_APPS = [
     'message',
 ]
 
-
+#工具集
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -58,8 +61,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+#url根文件
 ROOT_URLCONF = 'DSPProject.urls'
 
+#模板
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -77,6 +82,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'DSPProject.wsgi.application'
 
 
@@ -89,10 +95,11 @@ WSGI_APPLICATION = 'DSPProject.wsgi.application'
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+#数据库配置
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', #主要是这里，将默认的sqlite3改为mysql
-        'NAME': "jiuyang", #数据库的名字
+        'NAME': "spidertool", #数据库的名字
         'USER': "root",#数据库用户名
         'PASSWORD': "123456",#数据库密码
         'HOST': "127.0.0.1",#数据库地址，默认本机
@@ -100,11 +107,7 @@ DATABASES = {
     }
 }
 
-#
-# 作者：海贼之路飞
-# 链接：http://www.jianshu.com/p/335121af76d3
-# 來源：简书
-# 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -148,4 +151,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-# STATIC_URL = '/static/'
+#静态文件地址
+STATIC_URL = '/static/'
