@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from message.views import getform
+from message.views import getform,getHellworld
 
 urlpatterns = [
     url(r'^index',getform),
+    url(r'^hello',getHellworld),
     url(r'^admin/', admin.site.urls),
     url(r'^form/$',getform,name='go_form')
 ]

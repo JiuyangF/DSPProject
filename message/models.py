@@ -11,6 +11,7 @@ class AdminUser(models.Model):
         self.cur = connection.cursor()
 
     def get_name(self):
+        # ss = models.
         select_sql = ""
         self.cur(select_sql)
     # name=models.CharField(max_length=20)

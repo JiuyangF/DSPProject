@@ -4,11 +4,9 @@ from django.http import HttpResponse
 # Create your views here.
 
 def getform(request):
-     context          = {}
+     context = {}
      context['hello'] = 'Hello World!'
      return render(request, 'temp.html', context)
 
-def getHellworld():
-     infmation = ''
-     dk = "为啥不行啊"
-     pass
+def getHellworld(request):
+     return HttpResponse('hello world')
