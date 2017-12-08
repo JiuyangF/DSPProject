@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from message.models import  DemandColumnInfo
+
 # Create your views here.
 
 def getform(request):
@@ -10,3 +12,6 @@ def getform(request):
 
 def getHellworld(request):
      return HttpResponse('hello world')
+
+def login(request):
+     pass
