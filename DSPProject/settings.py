@@ -34,7 +34,7 @@ SECRET_KEY = '1^=fn5ur^&gj=9l(e26@@^anyi-#miw&@eu4^ab))*zet@%dcl'
 #抛出异常到页面，正式项目需关闭
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost"]
+# ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
