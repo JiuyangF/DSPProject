@@ -21,6 +21,7 @@ from message import views
 urlpatterns = [
     url(r'^login$', views.login_view, name='login'),
     url(r'^logout', views.logout_view),
+    url(r'^demand', views.get_demand,name='demand'),
     url(r'^hello', views.getHellworld),
     url(r'^register$', views.register_view, name='register'),
     # url(r'^login',login),

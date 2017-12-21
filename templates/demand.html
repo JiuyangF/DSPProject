@@ -1,114 +1,45 @@
+
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
-  <meta charset="UTF-8">
+<meta charset="utf-8">
+<!--<script type="text/javascript" src="{% static 'lib/js/jquery.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'lib/js/demand.js' %}"></script>-->
+    <link rel="stylesheet" href="{% static 'lib/css/demand.css' %}">
   <!-- 引入样式 -->
-  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!--<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">-->
 </head>
 <body>
 <div style="text-align:center;">
-<p>需求部门: <select id="department">
-  <option value ="volvo">Volvo</option>
-  <option value ="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
+
+<form action="{% url 'demand' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+   {% csrf_token %}
+<p>需求部门: <select id="department" name="department">
+  <option value ="大数据部">大数据部</option>
+  <option value ="内容部">内容部</option>
+  <option value="产品">产品</option>
+  <option value="品控">品控</option>
 </select></p>
-<p>优先级：<select id="priority">
+<p>优先级：<select id="priority" name="priority">
     <option value="低">低</option>
     <option value="中">中</option>
     <option value="高">高</option>
 </select></p>
-<p>渠道名称：<input id="channel"></p>
-<p>数据类型：<input id="data_type"></p>
-<p>是否为APP:<input type="radio" name="is_app" value="tr">是
-            <input type="radio" name="is_app" value="fa">否
+<p>渠道名称：<input id="channel" name="channel_name" required></p>
+<p>数据类型：<input id="data_type" name="data_type" required></p>
+<p>是否为APP:<input type="radio" name="is_app" value=1 >是
+            <input type="radio" name="is_app" value=0 checked>否
 </p>
-<p>起始URL：<input id="start"></p>
-<p>采集频率：<input id="rate"></p>
-<p class="dem_comment"><span>备注：</span><textarea id="comment" ></textarea></p>
-<p>上传需求文档：<input id="doc" type="file"></p>
+<p>起始URL：<input id="start" name="start_url" type="url" required></p>
+<p>采集频率：<input id="rate" name="rate" type="number" min="0" max="2000" step="0.1" required></p>
+<p class="dem_comment"><span>备注：</span><textarea id="comment" name="dem_com"  required></textarea></p>
+<p>上传需求文档：<input id="doc" type="file" name="file"></p>
+    <p>需求字段：<input id="de_field" name="de_data" required></p>
+    <!--<button type="submit"  >提交</button><button id="subs">取消</button>-->
+    <input id="sub_tests" type="submit" value="提交">
+</form>
 </div>
+
 </body>
-  <!-- 先引入 Vue -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <!-- 引入组件库 -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
-
-<el-form :model="dynamicValidateForm" ref="dynamicValidateForm" label-width="100px" class="demo-dynamic">
-  <el-form-item
-    prop="email"
-    label="邮箱"
-    :rules="[
-      { required: true, message: '请输入邮箱地址', trigger: 'blur' },
-      { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur,change' }
-    ]"
-  >
-    <el-input v-model="dynamicValidateForm.email"></el-input>
-  </el-form-item>
-  <el-form-item
-    v-for="(domain, index) in dynamicValidateForm.domains"
-    :label="'域名' + index"
-    :key="domain.key"
-    :prop="'domains.' + index + '.value'"
-    :rules="{
-      required: true, message: '域名不能为空', trigger: 'blur'
-    }"
-  >
-    <el-input v-model="domain.value"></el-input><el-button @click.prevent="removeDomain(domain)">删除</el-button>
-  </el-form-item>
-  <el-form-item>
-    <el-button type="primary" @click="submitForm('dynamicValidateForm')">提交</el-button>
-    <el-button @click="addDomain">新增域名</el-button>
-    <el-button @click="resetForm('dynamicValidateForm')">重置</el-button>
-  </el-form-item>
-</el-form>
-<script>
-  export default {
-    data() {
-      return {
-        dynamicValidateForm: {
-          domains: [{
-            value: ''
-          }],
-          email: ''
-        }
-      };
-    },
-    methods: {
-      submitForm(formName) {
-        this.$refs[formName].validate((valid) => {
-          if (valid) {
-            alert('submit!');
-          } else {
-            console.log('error submit!!');
-            return false;
-          }
-        });
-      },
-      resetForm(formName) {
-        this.$refs[formName].resetFields();
-      },
-      removeDomain(item) {
-        var index = this.dynamicValidateForm.domains.indexOf(item)
-        if (index !== -1) {
-          this.dynamicValidateForm.domains.splice(index, 1)
-        }
-      },
-      addDomain() {
-        this.dynamicValidateForm.domains.push({
-          value: '',
-          key: Date.now()
-        });
-      }
-    }
-  }
-    new Vue({
-      el: '#app',
-      data: function() {
-        return { visible: false }
-      }
-    })
-</script>
-<script src="app.js"></script>
 </html>

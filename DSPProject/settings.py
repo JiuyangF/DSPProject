@@ -16,13 +16,18 @@ import os
 #项目跟目录
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 #仅有上面的设置，只说明了样式放在static文件，需要指定和项目根目录的关系
 
+#设置项目static地址
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+#设置文件存储位置
+FILE_STORE = "D:/work/"
 #设置静态文件的目录，设置为列表形式
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR,'static')
+# ]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -153,4 +158,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 #静态文件地址
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'

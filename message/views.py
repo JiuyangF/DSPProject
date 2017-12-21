@@ -3,15 +3,15 @@ from django.template import loader
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from message import models
-
+from message.models import DemandColumnInfo,SpiderDemandInfo
+from DSPProject import settings
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth.decorators import login_required
 # 第四个是 auth中用户权限有关的类。auth可以设置每个用户的权限。
-
-from .form import UserForm
+import os
+from .form import UserForm,DemandForm
 
 #注册
 @csrf_exempt
@@ -71,6 +71,72 @@ def login_view(req):
     else:
         context = {'isLogin': False,'pswd':True}
     return render(req, 'login.html', context)
+
+
+def handle_uploaded_file(f):
+    print(f.name,f.chunks(),"writesssssssssssssssssssssssssssssssssss")
+    # with open(f.chunks(),'r') as des:
+    #     print(des)
+    filename = f.name
+    path = settings.FILE_STORE
+    # path='D:/work/'     #上传文件的保存路径，可以自己指定任意的路径
+    if not os.path.exists(path):
+        os.makedirs(path)
+    with open(path+filename,'wb+')as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
+
+
+def get_demand(req):
+    context = {}
+    if req.method == 'POST':
+        form = DemandForm(req.POST)
+        print(form.is_valid())
+        if form.is_valid():
+        #获取需求信息表单
+            department = form.cleaned_data['department']
+            priority = form.cleaned_data['priority']
+            channel_name = form.cleaned_data['channel_name']
+            data_type = form.cleaned_data['data_type']
+            is_app = form.cleaned_data['is_app']
+            start_urls = form.cleaned_data['start_url']
+            rate = form.cleaned_data['rate']
+            dem_com = form.cleaned_data['dem_com']
+            de_data = form.cleaned_data['de_data']
+            print(de_data,department,data_type,is_app,type(is_app))
+            handle_uploaded_file(req.FILES['file'])
+            fname = req.FILES['file'].name
+            try:
+                demands = SpiderDemandInfo.objects.get(start_url=start_urls)
+            except:
+                demands = False
+            if demands:
+                return HttpResponse("已提交，请勿重复提交")
+            else:
+                demands_save = SpiderDemandInfo(demand_department=department,priority_level=priority,
+                                                channel_name = channel_name,data_type=data_type,
+                                                spider_rate=rate,upload_doc=fname,comment=dem_com,
+                                                is_app=is_app,start_url=start_urls,status=1,examine_status=0)
+                demands_save.save()
+                print("okokokokokokokokokokokokokokokokok")
+            return HttpResponse("提交成功")
+
+            # #获取的表单数据与数据库进行比较
+            # user = authenticate(username = username,password = password)
+            # if user:
+            #     #比较成功，跳转index
+            #     auth.login(req,user)
+            #     req.session['username'] = username
+            #     return redirect('/hello')
+        else:
+            #提交失败，还在demand
+            context = {'isLogin': False,'pawd':False}
+            return render(req, 'demand.html', context)
+    else:
+        context = {'isLogin': False,'pswd':True}
+    return render(req, 'demand.html', context)
+
+
 
 #登出
 def logout_view(req):

@@ -14,5 +14,9 @@ $(document).ready(function(){
     $("#hide").click(function(){
     $("p").hide();
     });
-
+//    实现文本收起并展开功能，可改变change 按钮的text
+     $("#change").click(function(){
+    $("p").toggle(2000);
+    $("#change").text("收起")
+    });
 });
