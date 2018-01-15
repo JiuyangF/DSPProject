@@ -28,6 +28,25 @@ FILE_STORE = "D:/work/"
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR,'static')
 # ]
+# 文件存储位置为本地/media/spiders_file  还有服务器1、172.31.33.69@/media/spiders_file 2、...
+WEB_SERVER_INFO={'Host':'172.31.33.69',
+                 'Username':'root',
+                 'Password':'syswin#123'}
+WEB_SERVER_INFOS = {
+    "app1" : {
+        "Host" : "172.31.33.69",
+        "Username" : "root",
+        "Password" : "syswin#123"
+         # "Password" :  os.environ.get("app2_password")
+        # 由服务器配置文件中读取密码具体参考：http://www.cnblogs.com/longyejiadao/archive/2012/06/28/2567885.html
+    },
+    "app2" : {
+        "ip" : "172.28.50.7",
+        "Username" : "root",
+        "Password" :  '123456'
+    }
+}
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/

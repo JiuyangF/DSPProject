@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>super demand</title>
+</head>
+<body>
+<form action='/superdemand/' method='POST'>{% csrf_token %}
+<!--{{form.data_type}}-->
+
+ {% for field in form %}
+  <p>
+   {{field.label_tag}} {{field}}
+   {{field.errors}}
+  </p>
+ {% endfor %}
+    <p>nan</p>
+    <p><input type='submit' value='留言'></p>
+</form>
+
+</body>
+</html>

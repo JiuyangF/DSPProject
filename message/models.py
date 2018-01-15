@@ -15,7 +15,8 @@ class UserInfo(models.Model):
 
 class DemandColumnInfo(models.Model):
     dc_id = models.AutoField(db_column='DC_id', primary_key=True)  # Field name made lowercase.
-    d = models.ForeignKey('SpiderDemandInfo', models.DO_NOTHING, db_column='D_id')  # Field name made lowercase.
+    # d = models.ForeignKey('SpiderDemandInfo', models.DO_NOTHING, db_column='D_id')  # Field name made lowercase.
+    d_id = models.IntegerField()
     column_name_cn = models.CharField(max_length=30)
     column_name_en = models.CharField(max_length=30, blank=True, null=True)
     extraction_rule = models.CharField(max_length=100, blank=True, null=True)

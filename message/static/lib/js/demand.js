@@ -1,5 +1,8 @@
-//$(document).ready(function(){
-//    $("#sub_test").click(function(){
+$(document).ready(function(){
+    $("#subs").click(function(){
+//        $("#subs")
+        $("#ih").append('<p><input class="de_field" name="de_data" required></p>');
+        return false;
 //        var channel = $("#channel").val();
 //        var data_type = $("#data_type").val();
 //        if (channel =="" || data_type==""){
@@ -40,4 +43,4 @@
 //    $("p").toggle(2000);
 //    $("#change").text("收起")
 //    });
-//});
+});

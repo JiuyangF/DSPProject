@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状态查询</title>
+</head>
+<div style="text-align:center;">
+<body>
+    {% if isComplete %}
+            <script type="text/javascript">
+            alert("申请提交成功，请等待审核")
+            </script>
+    {% endif %}
+    <form action="{% url 'selectdemand' %}" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+        {% csrf_token %}
+    <p>提交日期：<input id="start" name="create_time" type="date" required> 渠道名称：<input  name="channel_name"  required>
+        <input type="submit" required>
+    </p>
+
+    </form>
+        <table border="1">
+                <tr>
+                    <th>渠道名称</th>
+                    <th>申请提交部门</th>
+                    <th>数据类型</th>
+                    <th>提交日期</th>
+                    <th>申请状态</th>
+                </tr>
+
+        {% for post in post_list %}
+            <tr>
+
+                <td>{{post.channel_name}}</td>
+                <td>{{post.department}}</td>
+                <td>{{post.data_type}}</td>
+                <td>{{post.de_time}}</td>
+                <td>{{post.status}}</td>
+            </tr>
+
+        {% empty %}
+            <div class="no-post">暂时还没有需求！</div>
+        {% endfor %}
+
+        </table>
+
+</body>
+    </div>
+</html>
