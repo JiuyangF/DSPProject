@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 # import MySQLdb
 import os
 
+import djcelery
+djcelery.setup_loader()     #加载djcelery
+BROKER_URL = 'pyamqp://guest@localhost//'    #配置broker
+BROKER_POOL_LIMIT = 0
+CELERY_RESULT_BACKEND='djcelery.backends.database:DatabaseBackend'  #配置backend
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 #项目跟目录
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,6 +78,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'message',
+    'djcelery',
 ]
 
 #工具集
