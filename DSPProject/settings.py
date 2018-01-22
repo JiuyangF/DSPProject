@@ -81,6 +81,8 @@ INSTALLED_APPS = [
     'djcelery',
 ]
 
+CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
+
 #工具集
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -171,7 +173,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
