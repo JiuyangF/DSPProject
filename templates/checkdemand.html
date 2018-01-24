@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>状态查询</title>
+        <!-- Bootstrap core CSS -->
+    <link href="/static/template/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="/static/template/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Pace -->
+	<link href="/static/template/css/pace.css" rel="stylesheet">
+
+	<!-- Endless -->
+	<link href="/static/template/css/endless.css" rel="stylesheet">
+	<link href="/static/template/css/endless-skin.css" rel="stylesheet">
+
+	<!-- Datatable -->
+	<link href="/static/plugins/datatables/css/jquery.dataTables_themeroller.css" rel="stylesheet">
+
+	<!-- bootstrap-table -->
+	<link href="/static/plugins/bootstarp-table/bootstrap-table.min.css" rel="stylesheet">
+
 </head>
 <div style="text-align:center;">
 <body>
+<li><a tabindex="-1" class="main-link logoutConfirm_open" href="#logoutConfirm"><i class="fa fa-lock fa-lg"></i> Log out</a></li>
+ 	<!-- Logout confirmation -->
+
     {% if isComplete %}
             <script type="text/javascript">
             alert("申请提交成功，请等待审核")
@@ -42,7 +64,20 @@
         {% endfor %}
 
         </table>
+	<a href="" id="scroll-to-top" class="hidden-print"><i class="fa fa-chevron-up"></i></a>
 
+	<div class="custom-popup width-100" id="logoutConfirm">
+		<div class="padding-md">
+			<h4 class="m-top-none"> Do you want to logout?</h4>
+		</div>
+
+		<div class="text-center">
+			<a class="btn btn-success m-right-sm" href="{% url 'logout'%}?next=/">Logout</a>
+			<a class="btn btn-danger logoutConfirm_close">Cancel</a>
+		</div>
+	</div>
+{% block footer_content %}{% endblock %}
+   {# 主体结束 #}
 </body>
     </div>
 </html>

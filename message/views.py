@@ -77,6 +77,11 @@ def login_view(req):
 
 
 def handle_uploaded_file(f):
+    """
+    需求文档上传功能
+    :param f:
+    :return:
+    """
     print(f.name,f.chunks(),"writesssssssssssssssssssssssssssssssssss")
     # with open(f.chunks(),'r') as des:
     #     print(des)
@@ -89,8 +94,13 @@ def handle_uploaded_file(f):
         for chunk in f.chunks():
             destination.write(chunk)
 
-
+@login_required
 def get_demand(req):
+    """
+    需求上传方法，实现需求入库功能
+    :param req:
+    :return:
+    """
     context = {}
     if req.method == 'POST':
         form = DemandForm(req.POST)
@@ -156,7 +166,13 @@ def get_demand(req):
         # context = {'isLogin': False,'pswd':True}
         return render(req, 'demand.html', context={'isComplete': False})
 
+@login_required
 def show_demand(req):
+    """
+    显示所有需求
+    :param req:
+    :return:
+    """
     post_list = []
     status_dict = {1:'待审批',0:'未通过',2:"已通过"}
     a_list = SpiderDemandInfo.objects.all()
@@ -168,7 +184,7 @@ def show_demand(req):
         status = status_dict[a.status]
         dict_demand = {"channel_name": channel_name, "department": department, "data_type": data_type, "de_time": de_time,
          "status": status}
-        print(dict_demand)
+        # print(dict_demand)
         post_list.append(dict_demand)
     # post_list = [{"channel_name": channel_name, "department": department, "data_type": data_type, "de_time": de_time,
     #               "status": "待审核"}]
@@ -176,7 +192,14 @@ def show_demand(req):
     return render(req, 'checkdemand.html', context={'post_list': post_list})
     # pass
 
+@login_required
 def selectdemand(req):
+    """
+    显示筛选后的需求信息
+
+    :param req:
+    :return:
+    """
     post_list = []
     status_dict = {1: '待审批', 0: '未通过', 2: "已通过"}
     if req.POST:
@@ -279,7 +302,8 @@ def super_demand(req):
     return render(req,'superdemand.html', {'form': form})
 
 #登出
-def logout_view(req):
+@csrf_exempt
+def logout(req):
     #清理cookie里保存username
     auth.logout(req)
     return redirect('/login')

@@ -13,23 +13,42 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.conf.urls import include
 from django.conf.urls import url
 from django.contrib import admin
+# from django.contrib.auth.views import logout
+from django.contrib.auth.views import login
 from message import views
+admin.autodiscover()
+from DSPProject.views import *
+
 # from message.views import getform,getHellworld,login
 
 urlpatterns = [
-    url(r'^login$', views.login_view, name='login'),
-    url(r'^logout', views.logout_view),
+    # url(r'^login', views.login_view, name='login'),
+    # url(r'^logout', views.logout),
+    url(r'login',login, {'template_name': 'login.htm'},name='login'),
+    url(r'^index/$', index),  # 首页
+    url(r'^$', index, name='index'),
+    url(r'^accounts/login/$', login, {'template_name': 'login.htm'},name='login'),
+    url(r'^accounts/logout/$', views.logout,name='logout'),
+    url(r'^get_username/$', get_username),  # 获取当前登陆用户名
+    url(r'^check_permission/$', check_permission),  # 检测用户权限
     url(r'^demand', views.get_demand,name='demand'),
     url(r'^superdemand',views.super_demand),
     url(r'^checkdemand',views.show_demand),
     url(r'^selectdemand',views.selectdemand,name='selectdemand'),
     url(r'^hello', views.getHellworld),
     url(r'^register$', views.register_view, name='register'),
+    # url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+
     # url(r'^login',login),
     # url(r'^index',getform),
     # url(r'^hello',getHellworld),
-    url(r'^admin/', admin.site.urls),
+    # url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+
+    url(r'^scheduled_tasks/', include('sheduled_tasks.urls')),
+
+    url(r'^admin/', admin.site.urls)
     # url(r'^form/$',getform,name='go_form')
 ]
