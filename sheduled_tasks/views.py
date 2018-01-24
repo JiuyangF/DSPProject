@@ -31,20 +31,20 @@ import json
 
 # Create your views here.
 
-logger = logging.getLogger('scheduled_tasks')
+logger = logging.getLogger('sheduled_tasks')
 PAGE_SIZE = 10  # 每页显示条数
 current_page_total = 10  # 分页下标
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def periodic_task(request):
     # 周期任务
     return render(request, 'scheduled_tasks/periodic_task.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_periodic_task_data(request):
     response = HttpResponse()
     rows = PeriodicTask.objects.values()
@@ -86,15 +86,15 @@ def val_to(dt):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def add_periodic_task(request):
     # 新增 周期任务
     return render_to_response('scheduled_tasks/add_periodic_task.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_task_template(request):
     irrelevant_tasks = ['YinguOnline.celery.debug_task',
                         'backup_ygolp',
@@ -120,7 +120,7 @@ def get_task_template(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_crontab(request):
     # 获取 crontab 定时时间
     response = HttpResponse()
@@ -130,8 +130,8 @@ def get_crontab(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def add_crontab(request):
     # 新增 crontab 定时时间
     response = HttpResponse()
@@ -148,7 +148,7 @@ def add_crontab(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_database(request):
     # 获取 crontab 定时时间
     response = HttpResponse()
@@ -327,8 +327,8 @@ class Check_Mod_Periodic_Task(Check_Periodic_Task):
 
 @login_required
 @verification(Check_Periodic_Task)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def add_periodic_task_data(request):
     # 提交新增周期任务数据
     response = HttpResponse()
@@ -376,8 +376,8 @@ def add_periodic_task_data(request):
 
 @login_required
 @verification(Check_Periodic_Task)
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def test_periodic_task_data(request):
     # 测试  新增周期任务 数据
     response = HttpResponse()
@@ -391,8 +391,8 @@ def test_periodic_task_data(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def test_periodic_task_result(request):
     # 获取 测试  新增周期任务 结果
     response = HttpResponse()
@@ -407,14 +407,14 @@ def test_periodic_task_result(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def mod_periodic_task(request, id):
     # 修改 周期任务
     return render_to_response('scheduled_tasks/mod_periodic_task.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_mod_periodic_task_data(request):
     # 获取修改的周期任务数据
     response = HttpResponse()
@@ -436,8 +436,8 @@ def get_mod_periodic_task_data(request):
 
 @login_required
 @verification(Check_Mod_Periodic_Task)
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def mod_periodic_task_data(request):
     # 修改周期任务数据
     response = HttpResponse()
@@ -488,8 +488,8 @@ def mod_periodic_task_data(request):
 
 @login_required
 @verification(Check_Mod_Periodic_Task)
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def test_periodic_task_mod(request):
     # 测试  修改周期任务 数据
     response = HttpResponse()
@@ -504,8 +504,8 @@ def test_periodic_task_mod(request):
 
 @login_required
 @verification(Check_Mod_Periodic_Task)
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def delete_periodic_task(request):
     # 测试  修改周期任务 数据
     response = HttpResponse()
@@ -520,14 +520,14 @@ def delete_periodic_task(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def crontabs(request):
     # 周期任务的crontab 定时时间
     return render_to_response('scheduled_tasks/crontabs.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def crontabs_get_data(request):
     # 获取 crontab 定时时间数据
     response = HttpResponse()
@@ -538,23 +538,23 @@ def crontabs_get_data(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def add_crontab_index(request):
     # 新增 周期任务的crontab 定时时间 页面
     return render_to_response('scheduled_tasks/add_crontabs.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def mod_crontabs_index(request, id):
     # 修改 周期任务的crontab 定时时间 页面
     return render_to_response('scheduled_tasks/mod_crontabs.html', locals())
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def get_mod_crontab_data(request):
     # 获取 需要修改的 crontab 定时时间 数据
     response = HttpResponse()
@@ -569,8 +569,8 @@ def get_mod_crontab_data(request):
 
 
 @login_required
-@permission_required('scheduled_tasks.viewTask', raise_exception=PermissionDenied)
-@permission_required('scheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 def delete_crontab(request):
     # 删除 crontab 定时时间 数据
     response = HttpResponse()

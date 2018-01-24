@@ -16,7 +16,7 @@ import redis
 import logging
 import re
 
-logger = logging.getLogger('scheduled_tasks')
+logger = logging.getLogger('sheduled_tasks')
 
 
 class Logger_Redis(object):
@@ -91,7 +91,7 @@ class Data(Database_Connection):
 
         row = []
         for val in dt:
-            if isinstance(val, long):
+            if isinstance(val, int):
                 val = str(val)
             if isinstance(val, str) and next(ILLEGAL_CHARACTERS_RE.finditer(val), None):
                 val = ord(val)
@@ -214,6 +214,11 @@ def mail_html(subject, task_name, sql_list, **kwargs):
     smail.send()
 
 
+@shared_task(name='run_py')
+def run_worke(file_name):
+    # import
+    pass
+
 class Send_Mail_Html(object):
     # 发送邮件
     def __init__(self, subject, date_time, tablestr, style, logger, **mailpara):
@@ -292,3 +297,4 @@ def test_mail(**data):
     all_fun = {"mail_excel": test_mail_excel, "mail_html": test_mail_html}
     fun = all_fun.get(data['task_template'])
     fun(**data)
+

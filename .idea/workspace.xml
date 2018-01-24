@@ -1,198 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/login_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/default/icon-ext.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/default/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/default/loading-0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/default/loading-1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/default/loading-2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/chosen/chosen-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/chosen/chosen-sprite@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/images/border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/images/controls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/images/loading_background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/images/overlay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/dropzone/images/spritemap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/dropzone/images/spritemap@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/gritter/images/gritter-light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/gritter/images/gritter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/gritter/images/ie-spacer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/email_template/color6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/gallery9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/movie/preview9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/responsive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/screenshot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/user.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/user2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/user3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/user4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/img/user5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DSPProject/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/access.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/excel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/local_mysql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/mailtable.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/public.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/query_sql.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/core/unicode_width.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/public/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/public/log.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/public/mailclass.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/public/mysql_helper.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controller/public/pagination.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/conf/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/conf/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/csrf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/bootstarp-table/bootstrap-table-zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/bootstarp-table/bootstrap-table.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/bootstarp-table/bootstrap-table.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/datatables/css/jquery.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/datatables/css/jquery.dataTables_themeroller.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/datatables/js/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/datatables/js/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/layer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/plugins/layer/skin/layer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/bootstrap-datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/bootstrap-datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/bootstrap-timepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/bootstrap-wysihtml5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/chosen/chosen.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/colorbox/colorbox.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/dropzone/dropzone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/endless-landing.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/endless-skin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/endless.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/endless.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/fullcalendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/gritter/jquery.gritter.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/jcarousel.responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/jquery.dataTables_themeroller.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/jquery.tagsinput.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/morris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/pace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/css/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/bootstrap-datepicker.zh-CN.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/bootstrap-slider.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/bootstrap-timepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/chosen.jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/dropzone.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/endless/endless.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/endless/endless_dashboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/endless/endless_form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/endless/endless_wizard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/fullcalendar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery-ui-map/ui/min/jquery.ui.map.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery-ui-map/ui/min/jquery.ui.map.microformat.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.colorbox.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.cookie.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.flot.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.gritter.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.jcarousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.localscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.nestable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.popupoverlay.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.resize.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.scrollTo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.slimscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.sparkline.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/jquery.tagsinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/modernizr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/morris.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/pace.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/parsley.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/rapheal.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/uncompressed/bootstrap-wysihtml5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/uncompressed/holder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/uncompressed/pace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/uncompressed/run_prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/waypoints.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/template/js/wysihtml5-0.3.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/403.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/login.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html" />
+    <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="用户权限设置，装饰器">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/settings.py" afterPath="$PROJECT_DIR$/DSPProject/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/urls.py" afterPath="$PROJECT_DIR$/DSPProject/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message/views.py" afterPath="$PROJECT_DIR$/message/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/checkdemand.html" afterPath="$PROJECT_DIR$/templates/checkdemand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/views.py" afterPath="$PROJECT_DIR$/DSPProject/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" afterPath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheduled_tasks/views.py" afterPath="$PROJECT_DIR$/sheduled_tasks/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
     </list>
     <ignored path="DSPProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -220,60 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="add_crontabs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheduled_tasks/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_crontabs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/message/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2214">
-              <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#1626#2410#0" expanded="false" />
-                <element signature="e#2954#6449#0" expanded="false" />
-                <element signature="e#6493#7339#0" expanded="false" />
-                <element signature="e#7384#9671#0" expanded="false" />
-                <element signature="e#9700#12139#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="474" column="27" lean-forward="false" selection-start-line="474" selection-start-column="27" selection-end-line="474" selection-end-column="27" />
-              <folding>
-                <element signature="e#89#116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -282,8 +48,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sheduled_tasks/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            <state relative-caret-position="243">
+              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
               <folding>
                 <element signature="e#24#56#0" expanded="true" />
               </folding>
@@ -291,22 +57,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crontabs.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="208">
+              <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+              <folding>
+                <element signature="e#89#116#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -314,19 +72,85 @@
       <file leaf-file-name="mod_periodic_task.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="269">
+              <caret line="753" column="19" lean-forward="false" selection-start-line="753" selection-start-column="19" selection-end-line="753" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="periodic_task.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSPProject/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="45" column="45" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="45" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail_task.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheduled_tasks/mail_task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="803">
+              <caret line="219" column="8" lean-forward="false" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="8" />
+              <folding>
+                <element signature="e#162#202#0" expanded="true" />
+                <element signature="e#553#973#0" expanded="false" />
+                <element signature="e#1015#1281#0" expanded="false" />
+                <element signature="e#1321#2714#0" expanded="false" />
+                <element signature="e#2746#3785#0" expanded="false" />
+                <element signature="e#3880#4552#0" expanded="false" />
+                <element signature="e#4588#5796#0" expanded="false" />
+                <element signature="e#5889#6442#0" expanded="false" />
+                <element signature="e#6556#7641#0" expanded="false" />
+                <element signature="e#7676#8721#0" expanded="false" />
+                <element signature="e#8751#8893#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheduled_tasks/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-454">
+              <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sheduled_tasks/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-379">
+              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="e#83#122#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -353,9 +177,15 @@
       <find>url</find>
       <find>, context_instance=RequestContext(request)</find>
       <find>logout</find>
+      <find>check</find>
+      <find>check_permission</find>
+      <find>shared_task</find>
+      <find>uled_tasks</find>
+      <find>heduled_tasks/</find>
     </findStrings>
     <replaceStrings>
       <replace>file_dir</replace>
+      <replace>sheduled_tasks</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\JiuyangLearn\PythonProject\DSPProject</dir>
@@ -406,7 +236,6 @@
         <option value="$PROJECT_DIR$/DSPProject/celery.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/urls.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/models.py" />
-        <option value="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/conf/config.py" />
         <option value="$PROJECT_DIR$/controller/core/access.py" />
         <option value="$PROJECT_DIR$/controller/core/excel.py" />
@@ -414,7 +243,6 @@
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html" />
         <option value="$PROJECT_DIR$/message/views.py" />
         <option value="$PROJECT_DIR$/templates/login.htm" />
-        <option value="$PROJECT_DIR$/DSPProject/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/mima.txt" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html" />
@@ -423,9 +251,11 @@
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html" />
-        <option value="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
-        <option value="$PROJECT_DIR$/sheduled_tasks/views.py" />
         <option value="$PROJECT_DIR$/DSPProject/settings.py" />
+        <option value="$PROJECT_DIR$/DSPProject/views.py" />
+        <option value="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
+        <option value="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
+        <option value="$PROJECT_DIR$/sheduled_tasks/views.py" />
       </list>
     </option>
   </component>
@@ -487,17 +317,35 @@
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
               <item name="sheduled_tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
+              <item name="sheduled_tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
@@ -554,7 +402,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YGOL-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="64" />
@@ -1068,20 +916,27 @@
       <option name="project" value="LOCAL" />
       <updated>1516616585205</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加scheduled app到系统">
+      <created>1516763521943</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1516763521943</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16148068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16362661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12612613" sideWeight="0.35208333" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265766" sideWeight="0.41845495" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126637" sideWeight="0.6479167" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265766" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265766" sideWeight="0.58154505" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1168,7 +1023,8 @@
     <MESSAGE value="需求申请功能初步完成" />
     <MESSAGE value="文件分发功能完成" />
     <MESSAGE value="2018/01/22 与celery融合开始一小部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018/01/22 与celery融合开始一小部分" />
+    <MESSAGE value="添加scheduled app到系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加scheduled app到系统" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,119 +1054,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/migrations/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrate/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/test/test_celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/conf/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2133">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/access.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2349">
-          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/local_mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/mailtable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/public.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/core/query_sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
@@ -1395,20 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/mail_task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6183">
@@ -1420,6 +1149,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="237" column="16" lean-forward="false" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,43 +1184,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/message/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7020">
-          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2214">
+          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+            <element signature="e#1626#2410#0" expanded="false" />
+            <element signature="e#2954#6449#0" expanded="false" />
+            <element signature="e#6493#7339#0" expanded="false" />
+            <element signature="e#7384#9671#0" expanded="false" />
+            <element signature="e#9700#12139#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/checkdemand.html">
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/conf/urls/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="269">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html">
+    <entry file="file://$PROJECT_DIR$/message/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="332">
+          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html">
+    <entry file="file://$PROJECT_DIR$/message/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html">
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="81">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1502,78 +1242,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
+    <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6885">
+          <caret line="255" column="9" lean-forward="false" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/checkdemand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="332">
+          <caret line="261" column="9" lean-forward="true" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/message/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2214">
-          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#1626#2410#0" expanded="false" />
-            <element signature="e#2954#6449#0" expanded="false" />
-            <element signature="e#6493#7339#0" expanded="false" />
-            <element signature="e#7384#9671#0" expanded="false" />
-            <element signature="e#9700#12139#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="474" column="27" lean-forward="false" selection-start-line="474" selection-start-column="27" selection-end-line="474" selection-end-column="27" />
-          <folding>
-            <element signature="e#89#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/conf/urls/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="97">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
+    <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="49" column="32" lean-forward="false" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celerybeat.pid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="221" column="1" lean-forward="true" selection-start-line="221" selection-start-column="1" selection-end-line="221" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/conf/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/celery/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#88#126#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="1773" column="4" lean-forward="false" selection-start-line="1773" selection-start-column="4" selection-end-line="1773" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/public.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#83#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sheduled_tasks/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        <state relative-caret-position="243">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding>
             <element signature="e#24#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/contrib/auth/decorators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="87" column="4" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+        <state relative-caret-position="-190">
+          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="753" column="19" lean-forward="false" selection-start-line="753" selection-start-column="19" selection-end-line="753" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DSPProject/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="45" column="45" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/mail_task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="219" column="8" lean-forward="false" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="8" />
+          <folding>
+            <element signature="e#162#202#0" expanded="true" />
+            <element signature="e#553#973#0" expanded="false" />
+            <element signature="e#1015#1281#0" expanded="false" />
+            <element signature="e#1321#2714#0" expanded="false" />
+            <element signature="e#2746#3785#0" expanded="false" />
+            <element signature="e#3880#4552#0" expanded="false" />
+            <element signature="e#4588#5796#0" expanded="false" />
+            <element signature="e#5889#6442#0" expanded="false" />
+            <element signature="e#6556#7641#0" expanded="false" />
+            <element signature="e#7676#8721#0" expanded="false" />
+            <element signature="e#8751#8893#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
+          <folding>
+            <element signature="e#89#116#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
