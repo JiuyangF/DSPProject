@@ -8,7 +8,7 @@ urlpatterns = [
     # Examples:
     # url(r'^$', 'YinguOnline.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+   url(r'^test_run/$', views.test_run),  # 周期任务
    url(r'^periodic_task/$', views.periodic_task),  # 周期任务
    url(r'^get_periodic_task_data/$', views.get_periodic_task_data),  # 周期任务 列表数据
    url(r'^add_periodic_task/$', views.add_periodic_task),  # 新增 周期任务

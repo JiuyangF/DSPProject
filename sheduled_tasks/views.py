@@ -1,31 +1,33 @@
 # from django.shortcuts import render
 
+import datetime
+# import sys
+import json
+import logging
+from functools import wraps
+from json import dumps
+
+import redis
 # Create your views here.
 # -*- coding: UTF-8 -*-
 from celery import registry
-# import registry
-from django.contrib.auth.decorators import permission_required
-from django.contrib.auth.decorators import login_required
-from django.core.exceptions import PermissionDenied
-from django.shortcuts import render_to_response,render
-from django.template import RequestContext
-from django.http import HttpResponse
-from djcelery.models import PeriodicTask, CrontabSchedule
-from djcelery.schedulers import ModelEntry, DatabaseScheduler
-from djcelery import loaders
-from functools import wraps
-from controller.core.public import Currency
 # from celery import registry 改动
 from celery import schedules
-from sheduled_tasks.mail_task import (test_mail)
-from json import loads, dumps
+from django.contrib.auth.decorators import login_required
+# import registry
+from django.contrib.auth.decorators import permission_required
+from django.core.exceptions import PermissionDenied
 from django.db.models import Q
-import redis
+from django.http import HttpResponse
+from django.shortcuts import render_to_response, render
+from djcelery import loaders
+from djcelery.models import PeriodicTask, CrontabSchedule
+from djcelery.schedulers import ModelEntry, DatabaseScheduler
+
+from DSPProject.task import (test_mail)
+from controller.core.public import Currency
 from sheduled_tasks.conf.config import *
-import datetime
-import logging
-# import sys
-import json
+
 # reload(sys)
 # sys.setdefaultencoding("utf-8")
 
@@ -324,12 +326,48 @@ class Check_Mod_Periodic_Task(Check_Periodic_Task):
 
         return status, self.error_msg
 
+@login_required
+# @verification(Check_Periodic_Task)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+def test_run(request):
+    response = HttpResponse()
+    crontab = 5
+    schedule = CrontabSchedule.objects.get(pk=crontab).schedule
+    create_or_update_task = DatabaseScheduler.create_or_update_task
+    schedule_dict = {
+        'schedule': schedule,
+        # 'args': [mail_header, task_name, sql_list],
+        # 'kwargs': mailpara,
+        'task': 'run_py',
+        'enabled': 1
+    }
+    schedule_dict2 = {
+        'schedule': schedule,
+        # 'args': [mail_header, task_name, sql_list],
+        # 'kwargs': mailpara,
+        'task': 'run_add',
+        'enabled': 1
+    }
+    task_name = 'tesfsdafafasfasfasfdas'
+    task_name2= 'test_add'
+    create_or_update_task(task_name, **schedule_dict)
+    create_or_update_task(task_name2, **schedule_dict2)
+    # mail_excel(mail_header, task_name, sql_list, **mailpara)
+    response.write(json.dumps({'status': 0, 'msg': ['操作成功']}))
+    # res = add.delay(228,24)
+    # print('fdsasadssssssssssssssssssssssssssssssssssssssssssssssss')
+    # print("start running task")
+    # print("async task res",res.get())
+    return response
+
 
 @login_required
 @verification(Check_Periodic_Task)
 @permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
 @permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
 def add_periodic_task_data(request):
+
     # 提交新增周期任务数据
     response = HttpResponse()
     cur = Currency(request)
@@ -347,7 +385,7 @@ def add_periodic_task_data(request):
     sql_list = data['sql_list']
     task_name = data['task_name']
     task_template = data['task_template']
-
+    print(crontab)
     mailpara = {
         'mail_host': mail_host,
         'mail_user': mail_user,
@@ -371,6 +409,10 @@ def add_periodic_task_data(request):
     create_or_update_task(task_name, **schedule_dict)
     # mail_excel(mail_header, task_name, sql_list, **mailpara)
     response.write(json.dumps({'status': 0, 'msg': ['操作成功']}))
+    # res = add.delay(228,24)
+    # print('fdsasadssssssssssssssssssssssssssssssssssssssssssssssss')
+    # print("start running task")
+    # print("async task res",res.get())
     return response
 
 

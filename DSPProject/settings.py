@@ -187,7 +187,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -214,6 +214,7 @@ HANSON = ['229396865@qq.com']
 # CELERY STUFF
 import djcelery
 djcelery.setup_loader()
+
 BROKER_URL = 'redis://auth:root@localhost:6379'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'  # 定时任务
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'

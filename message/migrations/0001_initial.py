@@ -45,6 +45,7 @@ class Migration(migrations.Migration):
                 ('start_url', models.CharField(blank=True, max_length=300, null=True)),
                 ('spider_rate', models.CharField(blank=True, max_length=10, null=True)),
                 ('upload_doc', models.CharField(blank=True, max_length=50, null=True)),
+                ('spiders_file', models.CharField(blank=True, max_length=50, null=True)),
                 ('comment', models.TextField(blank=True, null=True)),
                 ('status', models.IntegerField()),
                 ('examine_status', models.IntegerField()),

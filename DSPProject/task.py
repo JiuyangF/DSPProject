@@ -18,6 +18,19 @@ import re
 
 logger = logging.getLogger('sheduled_tasks')
 
+@shared_task(name='run_py')
+def run_worke(*args):
+    # import
+    for line in args:
+        print('run,runrurnrurnhr',line)
+    return 'run python file ok'
+
+@shared_task(name='run_add')
+def add():
+    x= 1
+    y =3
+    print(x+y,'ppppppppppppppppppppppppppppppppppppppppppppppppppppppppp')
+    return x + y
 
 class Logger_Redis(object):
     """
@@ -215,8 +228,9 @@ def mail_html(subject, task_name, sql_list, **kwargs):
 
 
 @shared_task(name='run_py')
-def run_worke(file_name):
+def run_worke():
     # import
+    print('test in ')
     pass
 
 class Send_Mail_Html(object):

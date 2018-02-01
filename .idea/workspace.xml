@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="用户权限设置，装饰器">
+    <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/change.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/dtmt.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/people.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/report.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/scheduled_tasks.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheduled_tasks/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spiders_scheduled/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spiders_scheduled/add_spiders_task.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spiders_scheduled/spiders_task.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/test/test_celery.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/settings.py" afterPath="$PROJECT_DIR$/DSPProject/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/views.py" afterPath="$PROJECT_DIR$/DSPProject/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" afterPath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/urls.py" afterPath="$PROJECT_DIR$/DSPProject/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller/core/access.py" afterPath="$PROJECT_DIR$/controller/core/access.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/message/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message/models.py" afterPath="$PROJECT_DIR$/message/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheduled_tasks/urls.py" afterPath="$PROJECT_DIR$/sheduled_tasks/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sheduled_tasks/views.py" afterPath="$PROJECT_DIR$/sheduled_tasks/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/message/tasks.py" afterPath="$PROJECT_DIR$/log/business_query.log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sheduled_tasks/mail_task.py" afterPath="$PROJECT_DIR$/DSPProject/task.py" />
     </list>
     <ignored path="DSPProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +57,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/tests.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spiders_scheduled/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -45,89 +67,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-              <folding>
-                <element signature="e#24#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-              <folding>
-                <element signature="e#89#116#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mod_periodic_task.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="753" column="19" lean-forward="false" selection-start-line="753" selection-start-column="19" selection-end-line="753" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSPProject/views.py">
+        <entry file="file://$PROJECT_DIR$/spiders_scheduled/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="45" column="45" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail_task.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/mail_task.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="219" column="8" lean-forward="false" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="8" />
+            <state relative-caret-position="204">
+              <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding>
-                <element signature="e#162#202#0" expanded="true" />
-                <element signature="e#553#973#0" expanded="false" />
-                <element signature="e#1015#1281#0" expanded="false" />
-                <element signature="e#1321#2714#0" expanded="false" />
-                <element signature="e#2746#3785#0" expanded="false" />
-                <element signature="e#3880#4552#0" expanded="false" />
-                <element signature="e#4588#5796#0" expanded="false" />
-                <element signature="e#5889#6442#0" expanded="false" />
-                <element signature="e#6556#7641#0" expanded="false" />
-                <element signature="e#7676#8721#0" expanded="false" />
-                <element signature="e#8751#8893#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#27#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,21 +82,88 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-454">
-              <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+            <state relative-caret-position="339">
+              <caret line="223" column="33" lean-forward="true" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sheduled_tasks/models.py">
+      <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-379">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="189">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DSPProject/task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="205" column="39" lean-forward="false" selection-start-line="205" selection-start-column="39" selection-end-line="205" selection-end-column="39" />
               <folding>
-                <element signature="e#83#122#0" expanded="true" />
+                <element signature="e#162#202#0" expanded="true" />
+                <element signature="e#861#1281#0" expanded="false" />
+                <element signature="e#1323#1589#0" expanded="false" />
+                <element signature="e#1629#3022#0" expanded="false" />
+                <element signature="e#3054#4093#0" expanded="false" />
+                <element signature="e#6197#6750#0" expanded="false" />
+                <element signature="e#6877#7962#0" expanded="false" />
+                <element signature="e#7997#9042#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="50" column="67" lean-forward="true" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_spiders_task.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/spiders_scheduled/add_spiders_task.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="74" column="89" lean-forward="true" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spiders_task.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/spiders_scheduled/spiders_task.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="254" column="34" lean-forward="false" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="152" column="32" lean-forward="true" selection-start-line="152" selection-start-column="32" selection-end-line="152" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spiders_scheduled/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,15 +173,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ALLOWED</find>
-      <find>app</find>
       <find>pic_dir</find>
       <find>CELERYBEAT_SCHEDULER</find>
       <find>ce</find>
@@ -182,6 +193,23 @@
       <find>shared_task</find>
       <find>uled_tasks</find>
       <find>heduled_tasks/</find>
+      <find>heduled_tasks</find>
+      <find>title</find>
+      <find>ying</find>
+      <find>schedules</find>
+      <find>registry</find>
+      <find>add</find>
+      <find>tasks</find>
+      <find>res</find>
+      <find>yingu</find>
+      <find>redis</find>
+      <find>nning tas</find>
+      <find>INSTALLED_APPS</find>
+      <find>add_periodic_task</find>
+      <find>PeriodicTask</find>
+      <find>操作成</find>
+      <find>Currency</find>
+      <find>DatabaseScheduler</find>
     </findStrings>
     <replaceStrings>
       <replace>file_dir</replace>
@@ -205,12 +233,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="D:/virtualenv/env_py3/Lib/site-packages/django/db/models/__init__.py" />
-        <option value="$PROJECT_DIR$/message/admin.py" />
-        <option value="$PROJECT_DIR$/templates/temp.html" />
-        <option value="$PROJECT_DIR$/templates/register.py" />
-        <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/message/migrations/0002_userinfo.py" />
         <option value="$PROJECT_DIR$/templates/tesejs.html" />
         <option value="$PROJECT_DIR$/templates/static/demand.css" />
@@ -219,7 +241,6 @@
         <option value="$PROJECT_DIR$/templates/testjauary.html" />
         <option value="$PROJECT_DIR$/templates/static/lib/demand.js" />
         <option value="$PROJECT_DIR$/templates/superdemand.html" />
-        <option value="$PROJECT_DIR$/message/models.py" />
         <option value="$PROJECT_DIR$/message/form.py" />
         <option value="$PROJECT_DIR$/message/static/lib/js/demand.js" />
         <option value="$PROJECT_DIR$/media/uploads/新建文本文档.txt" />
@@ -234,7 +255,6 @@
         <option value="$PROJECT_DIR$/tools/telnet.py" />
         <option value="$PROJECT_DIR$/message/tasks.py" />
         <option value="$PROJECT_DIR$/DSPProject/celery.py" />
-        <option value="$PROJECT_DIR$/sheduled_tasks/urls.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/models.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/conf/config.py" />
         <option value="$PROJECT_DIR$/controller/core/access.py" />
@@ -243,19 +263,27 @@
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html" />
         <option value="$PROJECT_DIR$/message/views.py" />
         <option value="$PROJECT_DIR$/templates/login.htm" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/mima.txt" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html" />
-        <option value="$PROJECT_DIR$/DSPProject/urls.py" />
         <option value="$PROJECT_DIR$/templates/checkdemand.html" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html" />
-        <option value="$PROJECT_DIR$/DSPProject/settings.py" />
         <option value="$PROJECT_DIR$/DSPProject/views.py" />
         <option value="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
-        <option value="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
+        <option value="$PROJECT_DIR$/DSPProject/settings.py" />
+        <option value="$PROJECT_DIR$/sheduled_tasks/urls.py" />
         <option value="$PROJECT_DIR$/sheduled_tasks/views.py" />
+        <option value="$PROJECT_DIR$/sheduled_tasks/mail_task.py" />
+        <option value="$PROJECT_DIR$/message/models.py" />
+        <option value="$PROJECT_DIR$/message/migrations/0001_initial.py" />
+        <option value="$PROJECT_DIR$/spiders_scheduled/urls.py" />
+        <option value="$PROJECT_DIR$/spiders_scheduled/views.py" />
+        <option value="$PROJECT_DIR$/DSPProject/urls.py" />
+        <option value="$PROJECT_DIR$/DSPProject/task.py" />
+        <option value="$PROJECT_DIR$/templates/spiders_scheduled/spiders_task.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/spiders_scheduled/add_spiders_task.html" />
       </list>
     </option>
   </component>
@@ -317,64 +345,7 @@
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="sheduled_tasks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="sheduled_tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
@@ -385,7 +356,7 @@
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSPProject" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="scheduled_tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders_scheduled" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DSPProject" type="b2602c69:ProjectViewProjectNode" />
@@ -396,8 +367,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,19 +394,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\DSPProject" />
+      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static\lib\js" />
+      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static" />
+      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static\css" />
+      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\static\lib\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JiuyangLearn\PythonProject\DSPProject\static" />
       <recent name="D:\JiuyangLearn\PythonProject\DSPProject\DSPProject" />
       <recent name="D:\JiuyangLearn\PythonProject\DSPProject\templates" />
       <recent name="D:\JiuyangLearn\PythonProject\DSPProject" />
       <recent name="D:\JiuyangLearn\PythonProject\DSPProject\sheduled_tasks" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static\lib\js" />
-      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static" />
-      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\message\static\css" />
-      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\static\lib\css" />
-      <recent name="D:\JiuyangLearn\PythonProject\DSPProject\static\lib\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -923,22 +894,29 @@
       <option name="project" value="LOCAL" />
       <updated>1516763521943</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="用户权限设置，装饰器@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)">
+      <created>1516787029583</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1516787029583</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16362661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17006437" sideWeight="0.4921171" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265766" sideWeight="0.41845495" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265766" sideWeight="0.35675967" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126637" sideWeight="0.6479167" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265766" sideWeight="0.58154505" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16791846" sideWeight="0.5078829" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30855855" sideWeight="0.64324033" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16791846" sideWeight="0.5078829" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1024,7 +1002,8 @@
     <MESSAGE value="文件分发功能完成" />
     <MESSAGE value="2018/01/22 与celery融合开始一小部分" />
     <MESSAGE value="添加scheduled app到系统" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加scheduled app到系统" />
+    <MESSAGE value="用户权限设置，装饰器@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户权限设置，装饰器@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1043,42 +1022,23 @@
           <line>123</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sheduled_tasks/views.py</url>
-          <line>245</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/core/query_sql.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="13419">
+          <caret line="497" column="66" lean-forward="false" selection-start-line="497" selection-start-column="65" selection-end-line="497" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/unicode_width.py">
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/public/mailclass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="8937">
+          <caret line="331" column="106" lean-forward="false" selection-start-line="331" selection-start-column="101" selection-end-line="331" selection-end-column="106" />
         </state>
       </provider>
     </entry>
@@ -1089,160 +1049,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/message/tasks.py" />
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/celery/schedules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="-2349">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/shortcuts.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
-          <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/template/context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="238" column="28" lean-forward="false" selection-start-line="238" selection-start-column="14" selection-end-line="238" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/template/js/endless/endless.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mima.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6183">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="237" column="16" lean-forward="false" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="16" />
+          <caret line="293" column="8" lean-forward="false" selection-start-line="293" selection-start-column="8" selection-end-line="293" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/icons.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/img/login_bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/csrf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/demand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1079">
-          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2214">
-          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="false" />
-            <element signature="e#1626#2410#0" expanded="false" />
-            <element signature="e#2954#6449#0" expanded="false" />
-            <element signature="e#6493#7339#0" expanded="false" />
-            <element signature="e#7384#9671#0" expanded="false" />
-            <element signature="e#9700#12139#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/conf/urls/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="53" column="39" lean-forward="true" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/message/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5724">
+          <caret line="212" column="14" lean-forward="false" selection-start-line="212" selection-start-column="14" selection-end-line="212" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/access.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/404.html">
+    <entry file="file://$PROJECT_DIR$/controller/core/mailtable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/query_sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/unicode_width.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/public/mailclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1729">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/public/mysql_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4375">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrate/admin.py" />
+    <entry file="file://$PROJECT_DIR$/migrate/models.py" />
+    <entry file="file://$PROJECT_DIR$/migrate/tests.py" />
+    <entry file="file://$PROJECT_DIR$/migrate/views.py" />
+    <entry file="file://$PROJECT_DIR$/migrate/migrations/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/controller/public/pagination.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/change.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/people.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/report.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/scheduled_tasks.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/business_query.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/telnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/djcelery/loaders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2592">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/djcelery/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3213">
+          <caret line="137" column="27" lean-forward="false" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/core/public.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/djcelery/schedulers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1998">
+          <caret line="149" column="6" lean-forward="false" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/celerybeat.pid" />
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="372" column="27" lean-forward="false" selection-start-line="372" selection-start-column="27" selection-end-line="372" selection-end-column="27" />
+          <folding>
+            <element signature="e#6887#7141#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message/migrations/0002_userinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/message/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiders_scheduled/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiders_scheduled/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1250,7 +1290,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/403.html">
+    <entry file="file://$PROJECT_DIR$/spiders_scheduled/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spiders_scheduled/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1260,206 +1308,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6885">
-          <caret line="255" column="9" lean-forward="false" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+        <state relative-caret-position="297">
+          <caret line="152" column="32" lean-forward="true" selection-start-line="152" selection-start-column="32" selection-end-line="152" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/checkdemand.html">
+    <entry file="file://$PROJECT_DIR$/spiders_scheduled/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="73" column="33" lean-forward="false" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="261" column="9" lean-forward="true" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_crontabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/celerybeat.pid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_crontabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="221" column="1" lean-forward="true" selection-start-line="221" selection-start-column="1" selection-end-line="221" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/conf/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="57" column="12" lean-forward="true" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/add_periodic_task.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/celery/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="90" column="39" lean-forward="true" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
           <folding>
-            <element signature="e#88#126#0" expanded="false" />
+            <element signature="e#27#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/logging/__init__.py">
+    <entry file="file://$PROJECT_DIR$/DSPProject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="1773" column="4" lean-forward="false" selection-start-line="1773" selection-start-column="4" selection-end-line="1773" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/core/public.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="366">
+          <caret line="50" column="67" lean-forward="true" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DSPProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-454">
-          <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+        <state relative-caret-position="339">
+          <caret line="223" column="33" lean-forward="true" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DSPProject/celery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/spiders_scheduled/spiders_task.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-379">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#83#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="254" column="34" lean-forward="false" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/urls.py">
+    <entry file="file://$PROJECT_DIR$/templates/spiders_scheduled/add_spiders_task.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/virtualenv/env_py3/Lib/site-packages/django/contrib/auth/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="54" column="4" lean-forward="false" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        <state relative-caret-position="123">
+          <caret line="74" column="89" lean-forward="true" selection-start-line="74" selection-start-column="89" selection-end-line="74" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html">
+    <entry file="file://$PROJECT_DIR$/DSPProject/task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="753" column="19" lean-forward="false" selection-start-line="753" selection-start-column="19" selection-end-line="753" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSPProject/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="45" column="45" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/mail_task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="219" column="8" lean-forward="false" selection-start-line="219" selection-start-column="8" selection-end-line="219" selection-end-column="8" />
+        <state relative-caret-position="1365">
+          <caret line="205" column="39" lean-forward="false" selection-start-line="205" selection-start-column="39" selection-end-line="205" selection-end-column="39" />
           <folding>
             <element signature="e#162#202#0" expanded="true" />
-            <element signature="e#553#973#0" expanded="false" />
-            <element signature="e#1015#1281#0" expanded="false" />
-            <element signature="e#1321#2714#0" expanded="false" />
-            <element signature="e#2746#3785#0" expanded="false" />
-            <element signature="e#3880#4552#0" expanded="false" />
-            <element signature="e#4588#5796#0" expanded="false" />
-            <element signature="e#5889#6442#0" expanded="false" />
-            <element signature="e#6556#7641#0" expanded="false" />
-            <element signature="e#7676#8721#0" expanded="false" />
-            <element signature="e#8751#8893#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sheduled_tasks/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="148" column="0" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding>
-            <element signature="e#89#116#0" expanded="true" />
+            <element signature="e#861#1281#0" expanded="false" />
+            <element signature="e#1323#1589#0" expanded="false" />
+            <element signature="e#1629#3022#0" expanded="false" />
+            <element signature="e#3054#4093#0" expanded="false" />
+            <element signature="e#6197#6750#0" expanded="false" />
+            <element signature="e#6877#7962#0" expanded="false" />
+            <element signature="e#7997#9042#0" expanded="false" />
           </folding>
         </state>
       </provider>
