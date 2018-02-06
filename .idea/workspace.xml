@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/message/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/message/approval_demand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/message/approved.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/message/mod_approval_demand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/message/mod_approved.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/out_base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/out_page/checkdemand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/out_page/demand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/out_page/show_demand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/out_page/submit_demand.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spiders_scheduled/mod_spiders_task.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/spiders_scheduled/spiders_tasks.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/message/checkdemand.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/message/demand.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/urls.py" afterPath="$PROJECT_DIR$/DSPProject/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DSPProject/views.py" afterPath="$PROJECT_DIR$/DSPProject/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message/views.py" afterPath="$PROJECT_DIR$/message/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/crontabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/mod_periodic_task.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html" afterPath="$PROJECT_DIR$/templates/scheduled_tasks/periodic_task.html" />
     </list>
     <ignored path="DSPProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -939,7 +918,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517452645216</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="完成了外部渠道和内部渠道访问的不同前端页面的设计和实现，完善了部分需求状态处理功能">
+      <created>1517912728093</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1517912728093</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1042,7 +1028,8 @@
     <MESSAGE value="添加scheduled app到系统" />
     <MESSAGE value="用户权限设置，装饰器@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)" />
     <MESSAGE value="完成邮件周期任务与脚本周期任务的分离，修改了tasks文件的位置，由sheduled_tasks app放到了系统设置文件夹下" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成邮件周期任务与脚本周期任务的分离，修改了tasks文件的位置，由sheduled_tasks app放到了系统设置文件夹下" />
+    <MESSAGE value="完成了外部渠道和内部渠道访问的不同前端页面的设计和实现，完善了部分需求状态处理功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了外部渠道和内部渠道访问的不同前端页面的设计和实现，完善了部分需求状态处理功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
