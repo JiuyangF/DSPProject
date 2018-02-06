@@ -2,8 +2,6 @@
 
 {% block header_content %}
 <style>
-.exp{ color:#00F}
-
 .center {
  width: auto;
  display: table;
@@ -65,7 +63,7 @@ white-space:nowrap;/* 不换行 */
 	<div class="padding-md">
 		<div class="panel panel-default table-responsive">
                 <div class="form-inline">
-					<a href="/scheduled_tasks/add_periodic_task/" id="add" type="button" class="btn btn-sm btn-info">
+					<a href="/spiders_scheduled/add_spiders_task/" id="add" type="button" class="btn btn-sm btn-info">
                         <i class="fa fa-plus"></i> 新增</a>
 				</div>
             <div class="table-responsive">
@@ -168,8 +166,8 @@ function get_columns() {
         visible: false
     }, {
         field: 'subject',
-        title: '邮件标题'
-
+        title: '邮件标题',
+        formatter: subjectFormatter
     }, {
         field: 'receivers',
         title: '收件人',
@@ -183,8 +181,7 @@ function get_columns() {
         title: '执行时间'
     }, {
         field: 'name',
-        title: '任务名称 ',
-        formatter: subjectFormatter
+        title: '任务名称 '
     }, {
         field: 'is_encrypt',
         title: '加密'
@@ -238,13 +235,14 @@ function receiversFormatter(value, row, index) {
 
 
 /*
-*超链接显示邮件标题;text-decoration:underline;
+*超链接显示邮件标题
 */
 function subjectFormatter(value, row, index) {
     var url = "/scheduled_tasks/mod_periodic_task/" + row.id;
     return [
-        '<div ><a style="color :#009FCC" class="mod" href='+ url +'>',
-        value, '</a></div>'
+        '<div><a class="mod" href='+ url +'>',
+        value,
+        '</a></div>'
     ].join('');
 }
 

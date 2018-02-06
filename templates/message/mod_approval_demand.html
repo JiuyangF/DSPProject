@@ -307,8 +307,12 @@ $(document).ready(function(){
 *初始化任务模板
 */
 function Initialization_task_template() {
+
     var url = '/scheduled_tasks/get_task_template/';
-    var para = {};
+    var local_url = location.href;
+    var args = str.split('/');
+    var _id = args[args.length-2];
+    var para = {'_id': _id};
     $.ajax({
           type : "post",
           url : url,

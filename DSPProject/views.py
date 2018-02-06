@@ -39,7 +39,6 @@ def get_username(request):
 @login_required
 def check_permission(request):
     # 检测用户权限
-    # print(request,'check_permission 少时诵诗书所所所所所所所所所所所所所所所所所所所所所所所所所所所所')
     nowuser = auth.get_user(request)
     cur = Currency(request)
     permission = cur.rq_post('permission')

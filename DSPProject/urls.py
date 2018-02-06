@@ -31,24 +31,16 @@ urlpatterns = [
     url(r'^index/$', index),  # 首页
     url(r'^$', index, name='index'),
     url(r'^accounts/login/$', login, {'template_name': 'login.htm'},name='login'),
+    url(r'^register$', views.register_view, name='register'),
     url(r'^accounts/logout/$', views.logout,name='logout'),
+
     url(r'^get_username/$', get_username),  # 获取当前登陆用户名
     url(r'^check_permission/$', check_permission),  # 检测用户权限
-    url(r'^demand', views.get_demand,name='demand'),
-    url(r'^superdemand',views.super_demand),
-    url(r'^checkdemand',views.show_demand),
-    url(r'^selectdemand',views.selectdemand,name='selectdemand'),
-    url(r'^hello', views.getHellworld),
-    url(r'^register$', views.register_view, name='register'),
-    # url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 
-    # url(r'^login',login),
-    # url(r'^index',getform),
-    # url(r'^hello',getHellworld),
-    # url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 
     url(r'^scheduled_tasks/', include('sheduled_tasks.urls')),
     url(r'^spiders_scheduled/', include('spiders_scheduled.urls')),
-    url(r'^admin/', admin.site.urls)
+    url(r'^message/', include('message.urls')),
+    url(r'^admin/$', admin.site.urls)
     # url(r'^form/$',getform,name='go_form')
 ]
