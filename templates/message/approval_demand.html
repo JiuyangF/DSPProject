@@ -195,7 +195,17 @@ function get_columns() {
     }, {
         field: 'proposer',
         title: '申请人'
-    } ];
+        }
+    <!--} , {-->
+        <!--field: 'down_file',-->
+        <!--title: '文档下载 ',-->
+        <!--formatter: function (value, row, index) {-->
+            <!--return index+1;-->
+            <!--}-->
+    }
+
+
+    ];
     return columns
 }
 
@@ -224,7 +234,7 @@ $('#table').bootstrapTable({
 function demandFormatter(value, row, index) {
     var url = "/message/mod_demand_data/" + row.id;
     return [
-        '<div style="color:#F00"><a class="mod" href='+ url +'>',
+        '<div><a style="color:#009FCC" class="mod" href='+ url +'>',
         value,
         '</a></div>'
     ].join('');

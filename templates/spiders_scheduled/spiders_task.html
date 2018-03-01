@@ -167,7 +167,7 @@ function get_columns() {
     }, {
         field: 'subject',
         title: '邮件标题',
-        formatter: subjectFormatter
+
     }, {
         field: 'receivers',
         title: '收件人',
@@ -181,7 +181,8 @@ function get_columns() {
         title: '执行时间'
     }, {
         field: 'name',
-        title: '任务名称 '
+        title: '任务名称 ',
+        formatter: subjectFormatter
     }, {
         field: 'is_encrypt',
         title: '加密'

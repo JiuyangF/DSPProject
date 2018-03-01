@@ -15,7 +15,10 @@ import json
 def index(request):
     # 首页
     nowuser = auth.get_user(request)
-    return render_to_response('index.html', locals())
+    if nowuser.has_perm('sheduled_tasks.editTask'):
+        return render_to_response('index.html', locals())
+    else:
+        return render_to_response('out_page/show_demand.html',locals())
 
 
 def page_not_found(request):

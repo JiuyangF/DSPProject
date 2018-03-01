@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'out_base.html' %}
 
 {% block header_content %}
 <style>
@@ -51,7 +51,7 @@ white-space: nowrap;
 <div id="main-container">
 	<div class="main-header clearfix">
 		<div class="page-title">
-			<h3 class="no-margin">需求详情</h3>
+			<h3 class="no-margin">需求更新</h3>
 		</div><!-- /page-title -->
 	</div><!-- /main-header -->
 
@@ -62,82 +62,96 @@ white-space: nowrap;
 						<div class="panel panel-default">
 							<form class="form-horizontal form-border no-margin" id="basic-constraint" data-validate="parsley" novalidate>
 								<div class="panel-heading">
-									detail
+									update spiders demand
 								</div>
 
 								<div class="panel-body">
                                     <div class="form-group">
 										<label class="control-label col-lg-2">申请人</label>
 										<div class="col-lg-4">
-											<input type="text" id="username" readonly="readonly" class="form-control input-sm" data-required="true" >
+											<input type="text" readonly="readonly" id="username" class="form-control input-sm" data-required="true" >
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">需求部门</label>
 										<div class="col-lg-4">
-											<input type="text" id="department" readonly="readonly" class="form-control input-sm" data-required="true" >
-										</div><!-- /.col -->
-									</div><!-- /form-group -->
-									<div class="form-group">
-										<label class="control-label col-lg-2" readonly="readonly">需求名称</label>
-										<div class="col-lg-4">
-											<input type="text" id="demand_name" readonly="readonly" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+											<input type="text" readonly="readonly" id="department" class="form-control input-sm" data-required="true" >
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
 									<div class="form-group">
 										<label class="control-label col-lg-2">渠道名称</label>
 										<div class="col-lg-4">
-											<input type="text" id="channel_name" readonly="readonly" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+											<input type="text" readonly="readonly" id="channel_name" class="form-control input-sm" data-required="true" placeholder="请输入英文">
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">数据类型</label>
 										<div class="col-lg-4">
-											<input type="text" id="data_type" readonly="readonly" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+											<input type="text" readonly="readonly" id="data_type" class="form-control input-sm" data-required="true" placeholder="请输入英文">
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">是否为APP</label>
-										<div class="col-lg-4">
-											<input type="url" id="is_app" readonly="readonly" class="form-control input-sm" data-required="true" >
+										<div class="col-lg-2">
+                                                <div class="seperator"></div>
+                                                <label class="label-radio inline">
+                                                    <input type="radio" name="is_sensitive" checked="checked" value=0>
+                                                    <span class="custom-radio"></span>
+                                                    否
+                                                </label>
+                                                <label class="label-radio inline">
+                                                    <input type="radio" name="is_sensitive" value=1>
+                                                    <span class="custom-radio"></span>
+                                                    是
+                                                </label>
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">起始url</label>
 										<div class="col-lg-4">
-											<input type="url" id="start_url" readonly="readonly" class="form-control input-sm" data-required="true" >
+											<input type="url" id="start_url" class="form-control input-sm" data-required="true" >
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">采集频率</label>
 										<div class="col-lg-4">
-											<input type="text" id="spider_rate" readonly="readonly" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+											<input type="number" id="rate" class="form-control input-sm" data-required="true"  min="0" max="2000" step="0.1">
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">采集优先度</label>
-										<div class="col-lg-4">
-											<input type="text" id="priority_level" readonly="readonly" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+										<div class="col-lg-3">
+                                            <select id="priority" class="form-control">
+                                                <option value="">请选择</option>
+                                                <option value="低">低</option>
+                                                <option value="中">中</option>
+                                                <option value="高">高</option>
+                                            </select>
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">需求字段</label>
 										<div class="col-lg-4">
-											<textarea id="column" spellcheck="false" readonly="readonly" class="form-control" placeholder="此字段为空..." rows="6" data-required="true"></textarea>
+											<textarea id="column" spellcheck="false" class="form-control" placeholder="填需要采集的数据字段..." rows="6" data-required="true"></textarea>
 										</div><!-- /.col -->
                                         <span class="col-lg-1">每行一个</span>
 									</div><!-- /form-group -->
                                     <div class="form-group">
 										<label class="control-label col-lg-2">备注信息</label>
 										<div class="col-lg-4">
-											<textarea id="comment" spellcheck="false" readonly="readonly" class="form-control" placeholder="备注信息..." rows="6" data-required="true"></textarea>
+											<textarea id="comment" spellcheck="false" class="form-control" placeholder="备注信息..." rows="6" data-required="true"></textarea>
 										</div><!-- /.col -->
 									</div><!-- /form-group -->
-
+                                    <div class="form-group">
+										<label class="control-label col-lg-2">需求文档上传</label>
+										<div class="col-lg-3">
+											<input id="file_upload" type="file" name="file" spellcheck="false" data-required="true">
+											<!--<input type="button" value="上传" onclick="FileUpload()">-->
+										</div>
+									</div>
                                 </div>
 								<div class="panel-footer">
-									<button id="save_task" type="button" class="btn btn-success">审核</button>
-									<button id="down_file" type="button" class="btn btn-success">下载需求文档</button>
+									<button id="save_task" type="button" class="btn btn-success">Save</button>
 									<button id="cancel_task" type="button" class="btn btn-danger pull-right">cancel</button>
 									<!--<button id="test_task" type="button" class="btn btn-info">Test</button>-->
 								</div>
@@ -169,7 +183,6 @@ $(document).ready(function(){
     layer.close(index);
 });
 
-
 /*
 *依据id返回需求信息
 */
@@ -177,7 +190,8 @@ function Initialization_demand() {
     var url = '/message/get_demand_byid/';
     var str=location.href;
     var args = str.split('/');
-    var _id = args[args.length-2];
+    var _id = args[args.length-1];
+
     var para = {'_id': _id};
     $.post(url, para, function (jdata) {
         var data = $.parseJSON(jdata);
@@ -185,16 +199,59 @@ function Initialization_demand() {
         $("#channel_name").val(data.channel_name);
         $("#department").val(data.demand_department);
         $("#data_type").val(data.data_type);
-        $("#demand_name").val(data.demand_name);
+        <!--$("#demand_name").val(data.demand_name);-->
         $("#start_url").val(data.start_url);
         $("#is_app").val(data.is_app);
-        $("#spider_rate").val(data.spider_rate);
+        $("#rate").val(data.spider_rate);
         $("#priority_level").val(data.priority_level);
-        $("#de_field").val(data.de_field);
         $("#comment").val(data.comment);
         $("#column").val(data.column);
     });
 }
+
+
+/*
+*获取提交的信息
+*/
+function get_para() {
+	var para = '';
+	var str=location.href;
+    var args = str.split('/');
+    var _id = args[args.length-1];
+    var username = $("#username").val().trim();
+    var department = $("#department").val().trim();
+    var channel_name = $("#channel_name").val().trim();
+    var data_type = $("#data_type").val().trim();
+    var is_sensitive = $("input[name='is_sensitive']:checked").val().trim();
+    var start_url = $("#start_url").val().trim();
+    var rate = $("#rate").val().trim();
+    var priority = $("#priority").val().trim();
+    var column = $("#column").val().trim();
+    var comment = $("#comment").val().trim();
+    var file_info =$('#file_upload')[0].files[0];
+
+    if (file_info==undefined||channel_name==''||department==''||data_type==''||start_url==''||priority==''||column==''){
+    	return para
+    } else
+	{
+		var file_name = file_info.name
+		var para = {
+		'_id' : _id,
+        'username': username,
+        'department': department,
+        'channel_name': channel_name,
+        'data_type': data_type,
+        'is_app': is_sensitive,
+        'start_url': start_url,
+        'rate': rate,
+        'priority': priority,
+        'column':column,
+        'comment':comment,
+        'file_name':file_name
+    };}
+    return para
+}
+
 
 /*
 *保存并提交需求信息
@@ -206,7 +263,7 @@ $("#save_task").click(function () {
     	ajax_callback1('请完善信息后提交')
     } else {
     var jpara = JSON.stringify(para);
-    var url = '/message/add_demand_data/';
+    var url = '/message/update_demand_data/';
     var index = layer.load();
     FileUpload();  //异步上传文件
     $.post(url, {'data': jpara}, function (res) {
@@ -246,7 +303,7 @@ function FileUpload() {
 *取消需求提交操作
 */
 $("#cancel_task").click(function () {
-	ajax_callback2('确认放弃提交需求？','/message/show_demand/');
+	ajax_callback2('确认放弃修改','/message/show_demand/');
 });
 
 /*

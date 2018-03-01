@@ -91,14 +91,146 @@ def logout(req):
 @login_required
 #外部需求方接口及方法
 def submit_demand(req):
+    """
+    跳转到用户提交新需求的页面
+    :param req:
+    :return:
+    """
     return render_to_response('out_page/submit_demand.html', locals())
 
 @login_required
+def update_demand(req,id):
+    return render_to_response('out_page/update_demand.html', locals())
+
+@login_required
+def update_demand_data(req):
+    """
+        实现需求更新功能
+        :param req:
+        :return:
+        """
+    response = HttpResponse()
+    cur = Currency(req)
+    rq_post = getattr(cur, 'rq_post')
+    data = json.loads(rq_post('data'))
+    _id = data['_id']
+    # username = data['username']
+    # department = data['department']
+    # channel_name = data['channel_name']
+    # data_type = data['data_type']
+    is_app = data['is_app']
+    start_url = data['start_url']
+    rate = data['rate']
+    priority = data['priority']
+    column = data['column']
+    comment = data['comment']
+    file_name = data['file_name']
+    d_code = str(uuid.uuid1()).replace('-', '')
+    # de_name = channel_name + "_" + data_type
+    try:
+        status = 0
+        SpiderDemandInfo.objects.filter(d_id=_id).update(priority_level=priority,
+                                        spider_rate=rate, upload_doc=file_name, comment=comment,
+                                        is_app=is_app, start_url=start_url, status=1, examine_status=0)
+        DemandColumnInfo.objects.filter(d_id=_id).delete()
+        list_de_data = str(column).replace("；", ';').strip(';').split('\n')
+        # d = SpiderDemandInfo.objects.get(d_code=d_code).d_id
+        for demand_data in list_de_data:
+            # 返回对象 = 子表(子表外键=母表.objects.get(母表字段=数据), 子表字段=要添加的数据)
+            # 返回对象.save()
+            # DemandColumnInfo.objects.create(,column_name_cn=demand_data)
+            demand_column = DemandColumnInfo(d_id=_id, column_name_cn=demand_data)
+            demand_column.save()
+        msg = ['已完成更新']
+    except:
+        status = 1
+        msg = ['更新失败']
+    response.write(json.dumps({"status": status, 'msg': msg}))
+    return response
+
+@login_required
+def add_demand_data(req):
+    """
+    实现新需求提交功能
+    :param req:
+    :return:
+    """
+    response = HttpResponse()
+    cur = Currency(req)
+    rq_post = getattr(cur,'rq_post')
+    data = json.loads(rq_post('data'))
+    username = data['username']
+    department = data['department']
+    channel_name = data['channel_name']
+    data_type = data['data_type']
+    is_app = data['is_app']
+    start_url = data['start_url']
+    rate = data['rate']
+    priority = data['priority']
+    de_field = data['de_field']
+    comment = data['comment']
+    file_name = data['file_name']
+    d_code = str(uuid.uuid1()).replace('-', '')
+    de_name = channel_name + "_" + data_type
+    try:
+        demands = SpiderDemandInfo.objects.get(start_url=start_url, demand_name=de_name, proposer=username)
+    except:
+        demands = False
+    if demands:
+        status = 1
+        msg = ['需求信息已存在']
+    else:
+        #填入插入的语句
+        a = SpiderDemandInfo.objects.latest('d_id')
+        max_id = a.d_id + 1
+        demands_save = SpiderDemandInfo(d_code=d_code, demand_name=de_name, demand_department=department,
+                                        priority_level=priority,
+                                        channel_name=channel_name, proposer=username, data_type=data_type,
+                                        spider_rate=rate, upload_doc=file_name, comment=comment,
+                                        is_app=is_app, start_url=start_url, status=1, examine_status=0)
+
+        list_de_data = str(de_field).replace("；", ';').strip(';').split('\n')
+        # d = SpiderDemandInfo.objects.get(d_code=d_code).d_id
+        for demand_data in list_de_data:
+            # 返回对象 = 子表(子表外键=母表.objects.get(母表字段=数据), 子表字段=要添加的数据)
+            # 返回对象.save()
+            # DemandColumnInfo.objects.create(,column_name_cn=demand_data)
+            demand_column = DemandColumnInfo(d_id=max_id, column_name_cn=demand_data)
+            demand_column.save()
+        demands_save.save()
+        status = 0
+        msg = ['操作成功']
+    response.write(json.dumps({"status": status,'msg': msg}))
+    return response
+
+@login_required
+def upload_ajax(request):
+    """
+    实现需求文档上传功能
+    :param request:
+    :return:
+    """
+    if request.method == 'POST':
+        file_obj = request.FILES.get('file')
+        handle_uploaded_file(file_obj)
+        return HttpResponse('OK')
+
+@login_required
 def show_demands(req):
+    """
+    实现用户需求信息展示页面
+    :param req:
+    :return:
+    """
     return render_to_response('out_page/show_demand.html',locals())
 
 @login_required
 def out_demand_show(req):
+    """
+    外部用户需求信息展示页面
+    :param req:
+    :return:
+    """
     nowuser = auth.get_user(req)
     username = nowuser.get_username()
     response = HttpResponse()
@@ -114,7 +246,7 @@ def out_demand_show(req):
 
 """
 
-上方为面向用户的接口及方法
+上方为面向外部用户的接口及方法
 
 """
 
@@ -316,14 +448,47 @@ def demand_get_data(req):
     return response
 
 #实现需求信息展示及操作功能
-def mod_demand_data(req,id):
-    return render_to_response('message/mod_approval_demand.html', locals())
+@login_required
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
+def mod_approved(req,id):
+    return render_to_response('message/mod_approved.html', locals())
 
 
-def med_demand_data_show(req):
+@login_required
+@permission_required('sheduled_tasks.viewTask', raise_exception=PermissionDenied)
+@permission_required('sheduled_tasks.editTask', raise_exception=PermissionDenied)
+def get_demand_byid(req):
+    """
+    根据id返回需求信息
+    :param req:
+    :return:
+    """
+    response = HttpResponse()
+    _id = req.POST.get('_id')
+    num_dict = {1:'是',0:'否'}
+    status_dict = {1: '待审批', 0: '未通过', 2: "已通过"}
+    spider_demand_obj = SpiderDemandInfo.objects.filter(d_id=_id)
+    demand_column_obj = DemandColumnInfo.objects.filter(d_id=_id)
+    column_list = [col.column_name_cn for col in demand_column_obj]
+    column = '\n'.join(column_list)
+    demand_stf = {}
+    for c in spider_demand_obj:
+        demand_stf = {'id': c.d_id, 'channel_name': c.channel_name,'demand_department': c.demand_department,
+                     'data_type': c.data_type,'demand_name': c.demand_name,'priority_level': c.priority_level,
+                     'create_time': c.create_time.strftime("%Y-%m-%d"),'is_app':num_dict[c.is_app],'spider_rate':c.spider_rate,
+                     'start_url': c.start_url,'proposer': c.proposer,'status': status_dict[c.status],'comment':c.comment,'column':column}
+    response.write(json.dumps(demand_stf))
+    return response
+
+
+
+
+def mod_demand_data_show(req):
 
 
     pass
+
 
 
 #通用方法
@@ -343,6 +508,7 @@ def handle_uploaded_file(f):
     with open(path+filename,'wb+')as destination:
         for chunk in f.chunks():
             destination.write(chunk)
+    f.close()
 
 # Create your views here.
 

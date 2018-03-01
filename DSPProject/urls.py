@@ -41,6 +41,6 @@ urlpatterns = [
     url(r'^scheduled_tasks/', include('sheduled_tasks.urls')),
     url(r'^spiders_scheduled/', include('spiders_scheduled.urls')),
     url(r'^message/', include('message.urls')),
-    url(r'^admin/$', admin.site.urls)
+    url(r'^admin/', admin.site.urls)
     # url(r'^form/$',getform,name='go_form')
 ]

@@ -201,9 +201,9 @@ $('#table').bootstrapTable({
 *超链接crontab
 */
 function demandFormatter(value, row, index) {
-    var url = "/message/mod_demand_data/" + row.id;
+    var url = "/message/update_demand/" + row.id;
     return [
-        '<div style="color:#F00"><a class="mod" href='+ url +'>',
+        '<div><a  style="color:#009FCC" class="mod" href='+ url +'>',
         value,
         '</a></div>'
     ].join('');
