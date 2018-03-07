@@ -34,6 +34,8 @@ urlpatterns = [
     url(r'^register$', views.register_view, name='register'),
     url(r'^accounts/logout/$', views.logout,name='logout'),
 
+
+
     url(r'^get_username/$', get_username),  # 获取当前登陆用户名
     url(r'^check_permission/$', check_permission),  # 检测用户权限
 
