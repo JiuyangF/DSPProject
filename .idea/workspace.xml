@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="089d88ae-5219-4cac-9875-d41dd582e991" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/message/urls.py" afterPath="$PROJECT_DIR$/message/urls.py" />
     </list>
     <ignored path="DSPProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -969,7 +968,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519894388137</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update message url 0307">
+      <created>1520394385892</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1520394385892</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -977,7 +983,7 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3004292" sideWeight="0.4921171" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3051802" sideWeight="0.36480686" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3051802" sideWeight="0.36480686" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126637" sideWeight="0.6479167" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.49791667" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1074,7 +1080,8 @@
     <MESSAGE value="完成邮件周期任务与脚本周期任务的分离，修改了tasks文件的位置，由sheduled_tasks app放到了系统设置文件夹下" />
     <MESSAGE value="完成了外部渠道和内部渠道访问的不同前端页面的设计和实现，完善了部分需求状态处理功能" />
     <MESSAGE value="年后第一弹" />
-    <option name="LAST_COMMIT_MESSAGE" value="年后第一弹" />
+    <MESSAGE value="update message url 0307" />
+    <option name="LAST_COMMIT_MESSAGE" value="update message url 0307" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
