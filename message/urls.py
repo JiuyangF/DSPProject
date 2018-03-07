@@ -2,6 +2,7 @@
 from django.conf.urls import url
 # import sheduled_tasks.views
 # from scheduled_tasks import views
+
 from message import views
 
 urlpatterns = [
