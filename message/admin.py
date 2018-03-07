@@ -3,5 +3,5 @@ from django.contrib import admin
 from message.models import SpiderDemandInfo,DemandColumnInfo,UserInfo
 admin.site.register(SpiderDemandInfo)
 admin.site.register(DemandColumnInfo)
-admin.site.register(UserInfo)
+# admin.site.register(UserInfo)
 # Register your models here.
