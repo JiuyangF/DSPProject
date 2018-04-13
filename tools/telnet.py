@@ -27,7 +27,6 @@ print("telnet success")
 # 登录完毕后，执行ls命令
 
 tn.read_until(finish)
-tn.write(b'cat main.py \n')
 time.sleep(0.5)
 # tn.read_until(finish)
 result = tn.read_very_eager()

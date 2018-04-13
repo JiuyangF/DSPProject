@@ -97,7 +97,7 @@ def send_pic_to_server(web_server_info, file_path):
     file_dir = file_path.split('/', 1)[0]  # 图片所在文件夹
     print(file_dir,file_path)
 
-    # 链接远程服务器
+    # 链接远程服务器cds
     # web_server_info = settings.WEB_SERVER_INFO
     ssh = paramiko.Transport((web_server_info["Host"]))
     ssh.connect(username=web_server_info["Username"], password=web_server_info["Password"])

@@ -42,6 +42,7 @@ class SpiderDemandInfo(models.Model):
     start_url = models.CharField(max_length=300, blank=True, null=True)
     spider_rate = models.CharField(max_length=10, blank=True, null=True)
     upload_doc = models.CharField(max_length=50, blank=True, null=True)
+    spiders_file = models.CharField(max_length=50, blank=True, null=True)
     comment = models.TextField(blank=True, null=True)
     status = models.IntegerField()
     examine_status = models.IntegerField()

@@ -1,0 +1,434 @@
+{% extends 'base.html' %}
+
+{% block header_content %}
+<style>
+.center {
+ width: auto;
+ display: table;
+ margin-left: auto;
+ margin-right: auto;
+}
+.text-center > table > tbody > tr > th,
+.text-center > table > thead > tr > th {
+ text-align: center;
+}
+
+.table-responsive {
+width: 100%;
+margin-bottom: 15px;
+overflow-x: scroll;
+overflow-y: hidden;
+border: 1px solid #dddddd;
+-ms-overflow-style: -ms-autohiding-scrollbar;
+-webkit-overflow-scrolling: touch;
+}
+.table-responsive > .table {
+margin-bottom: 0;
+}
+.table-responsive > .table > thead > tr > th,
+.table-responsive > .table > tbody > tr > th,
+.table-responsive > .table > tfoot > tr > th,
+.table-responsive > .table > thead > tr > td,
+.table-responsive > .table > tbody > tr > td,
+.table-responsive > .table > tfoot > tr > td {
+white-space: nowrap;
+}
+
+.NoNewline
+{
+word-break: keep-all;/*必须*/
+white-space: nowrap;
+}
+</style>
+	<!-- Datepicker -->
+    <link href="/static/template/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <!-- Gritter -->
+	<link href="/static/template/css/gritter/jquery.gritter.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block container %}
+<div id="main-container">
+	<div class="main-header clearfix">
+		<div class="page-title">
+			<h3 class="no-margin">新增 周期任务</h3>
+		</div><!-- /page-title -->
+	</div><!-- /main-header -->
+
+
+	<div class="padding-md">
+        <div class="row">
+            <div class="col-md-12">
+						<div class="panel panel-default">
+							<form class="form-horizontal form-border no-margin" id="basic-constraint" data-validate="parsley" novalidate>
+								<div class="panel-heading">
+									Add periodic task
+								</div>
+								<div class="panel-body">
+									<div class="form-group">
+										<label class="control-label col-lg-2" required>任务名称</label>
+										<div class="col-lg-4">
+											<input type="text" id="task_name" class="form-control input-sm" data-required="true" placeholder="请输入英文">
+										</div><!-- /.col -->
+									</div><!-- /form-group -->
+									<div class="form-group">
+										<label class="control-label col-lg-2" required>任务模板</label>
+										<div class="col-lg-3">
+                                            <select id="task_template" class="form-control">
+                                                <option value="">请选择</option>
+                                            </select>
+										</div><!-- /.col -->
+									</div><!-- /form-group -->
+
+									<div class="form-group">
+										<label class="control-label col-lg-2" required>任务脚本模板</label>
+										<div class="col-lg-3">
+                                            <select id="task_spiders" class="form-control">
+                                                <option value="">请选择</option>
+                                            </select>
+										</div><!-- /.col -->
+                                        <div class="col-lg-1">
+                                            <a href="#spidersAdd" data-toggle="modal" type="button" class="btn btn-default"><i class="fa fa-plus"></i></a>
+										</div>
+									</div><!-- /form-group -->
+
+
+									<div class="form-group">
+										<label class="control-label col-lg-2">是否启用</label>
+										<div class="col-lg-9">
+                                            <div class="seperator"></div>
+                                            <label class="label-checkbox inline">
+												<input id="is_enable" type="checkbox" data-required="true" name="chk-demo" checked="checked">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div><!-- /.col -->
+									</div><!-- /form-group -->
+
+									<div class="form-group">
+										<label class="control-label col-lg-2">执行时间</label>
+										<div class="col-lg-4">
+                                            <select id="crontab" class="form-control">
+                                                <option>请选择</option>
+                                            </select>
+										</div><!-- /.col -->
+                                        <div class="col-lg-1">
+                                            <a href="#crontabModal" data-toggle="modal" type="button" class="btn btn-default"><i class="fa fa-plus"></i></a>
+										</div>
+									</div><!-- /form-group -->
+                                    <div class="form-group">
+										<label class="control-label col-lg-2">是否加密</label>
+										<div class="col-lg-9">
+                                            <div class="seperator"></div>
+                                            <label class="label-checkbox inline">
+												<input id="is_encrypt" type="checkbox" data-required="true" name="is_encrypt" checked="checked">
+												<span class="custom-checkbox"></span>
+											</label>
+										</div><!-- /.col -->
+									</div><!-- /form-group -->
+									<div class="form-group">
+										<label class="control-label col-lg-2">是否含有敏感信息</label>
+										<div class="col-lg-2">
+                                                <div class="seperator"></div>
+                                                <label class="label-radio inline">
+                                                    <input type="radio" name="is_sensitive" checked="checked" value="1">
+                                                    <span class="custom-radio"></span>
+                                                    否
+                                                </label>
+                                                <label class="label-radio inline">
+                                                    <input type="radio" name="is_sensitive" value="0">
+                                                    <span class="custom-radio"></span>
+                                                    是
+                                                </label>
+										</div><!-- /.col -->
+									</div><!-- /form-group -->
+
+								</div>
+								<div class="panel-footer">
+									<button id="save_task" type="button" class="btn btn-success">Save</button>
+									<button id="test_task" type="button" class="btn btn-info">Test</button>
+								</div>
+							</form>
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#test_result">
+                                        Test Result
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="test_result" class="panel-collapse collapse in">
+                                <div class="panel-body">... ...</div>
+                            </div>
+                            <div class="modal fade" id="crontabModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4>Add crontab</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal form-border no-margin" id="basic-constraint-info" data-validate="parsley" novalidate>
+                                                <div class="panel-body">
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">minute</label>
+                                                        <div class="col-lg-9">
+                                                            <input name="minute" type="text" class="form-control input-sm" data-required="true" value="*" placeholder="Required Field">
+                                                        </div><!-- /.col -->
+                                                    </div><!-- /form-group -->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">hour</label>
+                                                        <div class="col-lg-9">
+                                                            <input name="hour" type="text" class="form-control input-sm" data-required="true" value="*" placeholder="Required Field">
+                                                        </div><!-- /.col -->
+                                                    </div><!-- /form-group -->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">day_of_week</label>
+                                                        <div class="col-lg-9">
+                                                            <input name="day_of_week" type="text" class="form-control input-sm" data-required="true" value="*" placeholder="Required Field">
+                                                        </div><!-- /.col -->
+                                                    </div><!-- /form-group -->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">day_of_month</label>
+                                                        <div class="col-lg-9">
+                                                            <input name="day_of_month" type="text" class="form-control input-sm" data-required="true" value="*" placeholder="Required Field">
+                                                        </div><!-- /.col -->
+                                                    </div><!-- /form-group -->
+                                                    <div class="form-group">
+                                                        <label class="control-label col-lg-2">month_of_year</label>
+                                                        <div class="col-lg-9">
+                                                            <input name="month_of_year" type="text" class="form-control input-sm" data-required="true" value="*" placeholder="Required Field">
+                                                        </div><!-- /.col -->
+                                                    </div><!-- /form-group -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-success btn-sm" data-dismiss="modal" aria-hidden="true">Close</button>
+                                            <a id="save_crontab" type="button" class="btn btn-danger btn-sm">Save</a>
+                                        </div>
+                                    </div><!-- /.modal-content -->
+                                </div><!-- /.modal-dialog -->
+                            </div><!-- /.modal -->
+						</div><!-- /panel -->
+					</div><!-- /.col-->
+        </div><!-- /.row -->
+	</div><!-- /padding-md -->
+</div><!-- /main-container -->
+{% endblock %}
+
+{% block footer_content %}
+
+
+<!-- Datepicker -->
+<script src='/static/template/js/bootstrap-datepicker.js'></script>
+<script src='/static/template/js/bootstrap-datepicker.zh-CN.min.js'></script>
+<script src="/static/template/js/jquery.gritter.min.js"></script>
+<!-- Modernizr -->
+{#<script src='/static/template/js/modernizr.min.js'></script>#}
+<script>
+$(document).ready(function(){
+    var index = layer.load();
+    Initialization_task_template();
+    Initialization_task_spiders();
+    Initialization_crontab();
+    layer.close(index);
+});
+
+
+/*
+*初始化任务模板
+*/
+function Initialization_task_template() {
+    var url = '/spiders_scheduled/get_task_template/';
+    var para = {};
+    $.post(url, para, function (jdata) {
+        var data = $.parseJSON(jdata);
+        $.each(data, function (k, v) {
+            var _option = "<option value='"+ v +"'>"+ v +"</option>";
+            $("#task_template").append(_option);
+        });
+    })
+}
+
+/*
+*初始化脚本名称
+*/
+function Initialization_task_spiders() {
+    var url = '/spiders_scheduled/get_task_spiders/';
+    var para = {};
+    $.post(url, para, function (jdata) {
+        var data = $.parseJSON(jdata);
+        $.each(data, function (k, v) {
+            var _option = "<option value='"+ v +"'>"+ v +"</option>";
+            $("#task_spiders").append(_option);
+        });
+    })
+}
+
+
+
+/*
+*初始化crontab 时间
+*/
+function Initialization_crontab() {
+    var url = '/scheduled_tasks/get_crontab/';
+    var para = {};
+    $.post(url, para, function (jdata) {
+        var _data = $.parseJSON(jdata);
+        $("#crontab").empty();
+        $.each(_data, function (k, v) {
+            var _cont = [v.minute, v.hour, v.day_of_week, v.day_of_month, v.month_of_year];
+            var _option = "<option value='"+ v.id +"'>"+ _cont.join(' ')+ " (分/时/周/日/月)" +"</option>";
+            $("#crontab").append(_option);
+        });
+    })
+}
+
+
+/*
+*添加 crontab 时间
+*/
+$("#save_crontab").click(function () {
+    var url = '/scheduled_tasks/add_crontab/';
+    var para = {};
+    $("#crontabModal").find('input').each(function () {
+        para[$(this).prop('name')] = $(this).val();
+    });
+    var jpara = JSON.stringify(para);
+    $.post(url, {'data': jpara}, function () {
+        Initialization_crontab();
+        $('#crontabModal').modal('hide');
+        $.gritter.add({
+            title: "<i class='fa fa-check-circle'></i> Success",
+            text: ' 可选择新添加的crontab时间.',
+            sticky: false,
+            time: '',
+            class_name: 'gritter-success'
+        });
+        return false;
+    })
+});
+
+
+/*
+*保存周期任务 save periodic task
+*/
+$("#save_task").click(function () {
+    var para = get_para();
+    var jpara = JSON.stringify(para);
+    var index = layer.load();
+    var url = '/spiders_scheduled/add_periodic_task_spiders/';
+    $.post(url, {'data': jpara}, function (res) {
+        var _data = $.parseJSON(res);
+        var msg = _data.msg.join('<br>');
+        layer.close(index);
+        // 成功则跳转列表页面，失败则提示错误信息继续修改。
+        if (_data.status == 0) {
+            var url ="/spiders_scheduled/spiders_task/";
+            ajax_callback2(msg, url)
+        }
+        else{
+            ajax_callback1(msg);
+        }
+    });
+});
+
+
+/*
+*测试周期任务 test periodic task
+*/
+$("#test_task").click(function () {
+    var para = get_para();
+    var _random = _getRandomString(6);
+    para['_random'] = _random;
+    var jpara = JSON.stringify(para);
+    var url = '/scheduled_tasks/test_periodic_task_data/';
+    var index = layer.load();
+    $("#test_result").children().text(""); //清空测试结果
+    var interval_id = setInterval(test_result, 3000, _random);
+        $.post(url, {'data': jpara}, function (res) {
+        var _data = $.parseJSON(res);
+        var msg = _data.msg.join('<br>');
+        layer.close(index);
+        clearInterval(interval_id);
+        test_result(_random);
+        ajax_callback1(msg);
+    });
+});
+
+
+/*
+*获取提交的信息
+*/
+function get_para() {
+    var task_name = $("#task_name").val().trim();
+    var task_template = $("#task_template").val().trim();
+    var task_spiders = $("#task_spiders").val().trim();
+    var is_enable = $("#is_enable").is(":checked");
+    var crontab = $("#crontab").val().trim();
+    var is_encrypt = $("#is_encrypt").is(":checked");
+    var is_sensitive = $("input[name='is_sensitive']:checked").val().trim();
+    var para = {
+        'task_name': task_name,
+        'task_template': task_template,
+        'task_spiders':'task_spiders',
+        'is_enable': is_enable,
+        'crontab': crontab,
+        'is_encrypt': is_encrypt,
+        'is_sensitive': is_sensitive,
+
+    };
+    return para
+}
+
+
+/*
+*ajax get callback
+*/
+function ajax_callback1(msg){
+    var index = layer.alert(msg, {
+        skin: 'layui-layer-molv' //样式类名
+    },function(){
+       layer.close(index)
+    });
+}
+
+
+// 获取长度为len的随机字符串
+function _getRandomString(len) {
+    len = len || 32;
+    var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678'; // 默认去掉了容易混淆的字符oOLl,9gq,Vv,Uu,I1
+    var maxPos = $chars.length;
+    var pwd = '';
+    for (i = 0; i < len; i++) {
+        pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+    }
+    return pwd;
+}
+
+
+/*
+*实时获取测试结果
+*/
+function test_result(_random) {
+    var url = '/scheduled_tasks/test_periodic_task_result/';
+        $.post(url, {'_random': _random}, function (res) {
+        var _data = $.parseJSON(res);
+        var msg = _data.msg.join('<br>') + '<br>';
+        $("#test_result").children().append(msg);
+    });
+}
+
+
+/*
+*ajax get callback2
+*/
+function ajax_callback2(msg, url){
+    var index = layer.alert(msg, {
+        skin: 'layui-layer-molv' //样式类名
+    },function(){
+        layer.close(index);
+        window.location=url;
+    });
+}
+</script>
+{% endblock %}
